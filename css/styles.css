@@ -1,0 +1,378 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background: #f7f7f7;
+  color: #222;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+section {
+  padding: 60px 20px;
+}
+
+#about,
+#projects,
+#skills,
+#inspiration,
+#contact {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 2rem;
+}
+
+p {
+  font-size: 1rem;
+}
+
+nav {
+  background: #111;
+  color: white;
+  padding: 15px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+nav h2 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  padding: 0;
+  margin: 10px 0 0 0;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+nav a.active {
+  text-decoration: underline;
+}
+
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.btn-small {
+  padding: 8px 12px;
+  background: #fff;
+  color: #111;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.btn-small:hover {
+  transform: translateY(-1px);
+  opacity: 0.9;
+}
+
+#projects {
+  margin-top: 20px;
+}
+
+.projects-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.project-card,
+.info-box,
+.inspiration-card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.project-card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
+}
+
+.project-card h3,
+.inspiration-card h3 {
+  margin-top: 0;
+}
+
+.project-logo {
+  width: 35%;
+  max-height: 120px;
+  object-fit: cover;
+  border-radius: 0px;
+  margin-bottom: 15px;
+}
+
+.muted {
+  color: #666;
+  margin-top: 8px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input,
+textarea,
+select {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+button {
+  padding: 12px;
+  background: #111;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: transform 0.2s ease, opacity 0.2s ease, background 0.2s ease;
+}
+
+button:hover {
+  background: #333;
+  transform: translateY(-1px);
+  opacity: 0.95;
+}
+
+.error {
+  color: #b00020;
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+.success {
+  color: #0f7b0f;
+  font-weight: bold;
+  margin-top: 6px;
+}
+
+.hidden {
+  display: none;
+}
+
+.fade-in {
+  animation: fadeIn 0.35s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.filter-actions {
+  margin-top: 14px;
+}
+
+.filter-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+
+  margin-top: 10px;
+}
+
+.filter-btn {
+  padding: 10px 14px;
+}
+
+.active-filter {
+  background: #444;
+}
+
+.sort-box {
+  margin-top: 14px;
+}
+
+/* Skills */
+.skills-slider {
+  overflow: hidden;
+  width: 100%;
+  background: #fff;
+
+  border-radius: 10px;
+  border: 1px solid #eaeaea;
+
+  padding: 18px 0;
+}
+
+.skills-track {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  width: max-content;
+  animation: skillsScroll 18s linear infinite;
+}
+
+.skill-pill {
+  background: #111;
+  color: #fff;
+  padding: 10px 16px;
+  border-radius: 999px;
+  font-weight: bold;
+  white-space: nowrap;
+  font-size: 0.95rem;
+  flex-shrink: 0;
+}
+
+@keyframes skillsScroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* Inspiration */
+.inspiration-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.inspiration-card {
+  overflow: hidden;
+}
+
+.inspiration-image {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+
+  border-radius: 10px;
+  margin-bottom: 12px;
+}
+
+.inspiration-meta {
+  font-size: 0.95rem;
+}
+
+@media (min-width: 768px) {
+  .projects-container {
+    flex-direction: row;
+  }
+
+  .project-card {
+    flex: 1;
+    margin-bottom: 0;
+  }
+
+  .inspiration-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+
+  }
+}
+
+body.dark {
+  background: #0f1115;
+  color: #f2f2f2;
+
+}
+
+body.dark .project-card,
+body.dark .info-box,
+body.dark .skills-slider,
+
+body.dark .inspiration-card {
+  background: #171a21;
+  border-color: #2a2f3a;
+}
+
+body.dark input,
+body.dark textarea,
+body.dark select {
+  background: #0f1115;
+  color: #f2f2f2;
+  border-color: #2a2f3a;
+
+}
+
+body.dark .muted {
+  color: #b9c0d0;
+
+}
+
+
+
+body.dark button {
+  background: #2a2f3a;
+}
+
+body.dark button:hover {
+  background: #3a4152;
+}
+
+
+body.dark .btn-small {
+  background: #2a2f3a;
+  color: white;
+}
+
+body.dark .skill-pill {
+  background: #2a2f3a;
+  color: #fff;
+}
