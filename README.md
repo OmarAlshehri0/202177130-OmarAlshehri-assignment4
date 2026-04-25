@@ -45,8 +45,8 @@ AI tools were used for:
 │   ├── ai-usage-report.md
 │   └── technical-documentation.md
 ├── presentation/
-│   ├── demo-script.md
-│   └── slides-outline.md
+│   ├── demo-video.mp4
+│   └── slides.pdf
 └── .gitignore
 ```
 

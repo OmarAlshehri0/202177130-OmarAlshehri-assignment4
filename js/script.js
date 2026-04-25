@@ -2,7 +2,7 @@ const navLinks = document.querySelectorAll(".nav-link");
 const sections = document.querySelectorAll("main section, header[id]");
 const tabButtons = document.querySelectorAll(".tab-btn");
 const tabPanels = document.querySelectorAll(".tab-panel");
-const backToTopBtn = document.getElementById("backToTopBtn");
+const backToTopBtn = document.getElementById("backToTopBtn"); 
 
 function updateActiveNav() {
   let currentId = "about";
