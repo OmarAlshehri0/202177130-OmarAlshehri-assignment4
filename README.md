@@ -53,3 +53,5 @@ AI tools were used for:
 ## Live Deployment
 - GitHub Pages: https://omaralshehri0.github.io/202177130-OmarAlshehri-assignment4/
 
+## Note: 
+The demo video was slightly sped up and compressed to meet the file size and time limit. This may affect audio clarity.
