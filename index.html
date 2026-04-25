@@ -2,192 +2,264 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Omar Alshehri | Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+        name="description"
+        content="Retro RPG-style personal portfolio for Omar Alshehri, featuring web projects, contact details, and a polished one-page experience."
+    >
+    <title>Omar Alshehri | Retro Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Oxanium:wght@400;500;600;700&family=Silkscreen:wght@400;700&display=swap"
+        rel="stylesheet"
+    >
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+    <div class="page-shell">
+        <header class="site-header" id="about">
+            <nav class="top-nav" aria-label="Primary navigation">
+                <a href="#about" class="nav-link active">About</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#github-projects" class="nav-link">GitHub</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
 
-    <!-- navigation -->
-    <nav>
-        <h2>Omar Alshehri</h2>
+            <div class="hero-panel panel">
+                <div class="hero-copy">
+                    <h1>Omar Alshehri</h1>
+                    <p class="hero-intro">
+                        Software Engineering student at King Fahd University of Petroleum & Minerals (KFUPM)
+                        with hands-on experience in web design and front-end development.
+                    </p>
+                    <p class="hero-intro">
+                        I am currently learning game development and improving myself to become a
+                        Cloud-Native Full-Stack Engineer.
+                    </p>
+                    <p class="hero-intro">
+                        Worked on a personal web development project delivering responsive, clean websites.
+                    </p>
 
-        <div class="nav-actions">
-            <button id="themeToggleBtn" type="button" class="btn-small">🌙</button>
-        </div>
+                    <ul class="contact-rail" aria-label="Social links">
+                        <li>
+                            <a href="https://www.linkedin.com/in/omaralshehri-web/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                                <span class="icon-frame">
+                                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                                        <path d="M6.94 8.5v8.56H4.09V8.5h2.85Zm.19-2.64c0 .82-.62 1.48-1.62 1.48S3.9 6.68 3.9 5.86c0-.83.64-1.48 1.64-1.48s1.57.65 1.59 1.48ZM20.1 12.07v4.99h-2.84v-4.66c0-1.17-.42-1.97-1.47-1.97-.8 0-1.28.54-1.49 1.06-.08.18-.1.43-.1.69v4.88h-2.84s.04-7.92 0-8.56h2.84v1.21c.38-.58 1.06-1.4 2.58-1.4 1.89 0 3.32 1.23 3.32 3.87Z"/>
+                                    </svg>
+                                </span>
+                                <span>LinkedIn</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/OmarAlshehri0" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                                <span class="icon-frame">
+                                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                                        <path d="M12 2C6.48 2 2 6.58 2 12.22c0 4.5 2.87 8.32 6.84 9.67.5.09.68-.22.68-.49 0-.24-.01-1.04-.01-1.89-2.78.62-3.37-1.21-3.37-1.21-.45-1.18-1.11-1.49-1.11-1.49-.91-.63.07-.62.07-.62 1 .08 1.53 1.05 1.53 1.05.9 1.56 2.35 1.11 2.92.85.09-.67.35-1.11.63-1.36-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.03 1.03-2.75-.11-.26-.45-1.31.1-2.72 0 0 .84-.28 2.75 1.05A9.3 9.3 0 0 1 12 6.85c.85 0 1.72.12 2.53.35 1.91-1.33 2.75-1.05 2.75-1.05.55 1.41.21 2.46.1 2.72.64.72 1.03 1.63 1.03 2.75 0 3.94-2.35 4.8-4.59 5.05.36.32.68.95.68 1.92 0 1.39-.01 2.51-.01 2.85 0 .27.18.59.69.49A10.24 10.24 0 0 0 22 12.22C22 6.58 17.52 2 12 2Z"/>
+                                    </svg>
+                                </span>
+                                <span>GitHub</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:Alshehri2292@gmail.com" aria-label="Email">
+                                <span class="icon-frame">
+                                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                                        <path d="M3 5.5h18a1 1 0 0 1 1 1v11a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1v-11a1 1 0 0 1 1-1Zm0 2v.2l9 5.84 9-5.84v-.2H3Zm18 2.57-8.46 5.48a1 1 0 0 1-1.08 0L3 10.07v6.43h18v-6.43Z"/>
+                                    </svg>
+                                </span>
+                                <span>Email</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://wa.me/966595824433" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+                                <span class="icon-frame">
+                                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                                        <path d="M20.52 3.48A11.8 11.8 0 0 0 12.07 0C5.57 0 .29 5.27.29 11.77c0 2.07.54 4.09 1.56 5.86L0 24l6.54-1.72a11.74 11.74 0 0 0 5.53 1.41h.01c6.49 0 11.78-5.28 11.78-11.78 0-3.15-1.22-6.1-3.34-8.43Zm-8.45 18.2h-.01a9.8 9.8 0 0 1-4.99-1.36l-.36-.21-3.88 1.02 1.04-3.79-.24-.39a9.76 9.76 0 0 1-1.5-5.18c0-5.42 4.41-9.83 9.84-9.83 2.62 0 5.08 1.02 6.93 2.88a9.73 9.73 0 0 1 2.88 6.95c0 5.42-4.41 9.82-9.81 9.82Zm5.39-7.34c-.29-.15-1.71-.84-1.98-.93-.26-.1-.45-.15-.64.15-.19.29-.74.93-.91 1.12-.17.19-.34.22-.63.08-.29-.15-1.22-.45-2.33-1.43-.86-.76-1.44-1.7-1.61-1.99-.17-.29-.02-.44.13-.59.14-.14.29-.34.44-.51.15-.17.19-.29.29-.49.09-.19.05-.37-.02-.51-.07-.15-.64-1.55-.88-2.12-.23-.56-.47-.49-.64-.5l-.54-.01c-.19 0-.5.07-.77.37-.26.29-1 1-.99 2.44 0 1.43 1.03 2.81 1.18 3 .15.19 2.02 3.12 4.98 4.25.7.3 1.25.48 1.68.62.71.22 1.35.19 1.86.12.57-.08 1.71-.7 1.95-1.38.24-.68.24-1.26.17-1.38-.07-.12-.26-.2-.55-.34Z"/>
+                                    </svg>
+                                </span>
+                                <span>WhatsApp</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
 
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#inspiration">Inspiration</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-
-    <!-- about -->
-    <section id="about">
-        <h1>About Me</h1>
-
-        <div class="info-box">
-            <p>
-                Software Engineering student at King Fahd University of Petroleum & Minerals (KFUPM)
-                with an interest in web design and front-end development.
-            </p>
-            <p>
-                I work on personal web design and development projects, building clean and responsive websites
-                using HTML, CSS, JavaScript, React, and WordPress.
-            </p>
-            <p class="muted">
-Officially certified as a freelancer with the Ministry of Human Resources and Social Development – Document Code: 757175720FL-            </p>
-        </div>
-    </section>
-
-    <!-- projects -->
-    <section id="projects">
-        <h1>Projects</h1>
-
-        <div class="info-box">
-            <h3>How to use this section</h3>
-            <p>Use the search box, category buttons, and sort menu to explore the project cards.</p>
-
-            <label for="projectSearch"><strong>Search Projects</strong></label>
-            <input id="projectSearch" type="text" placeholder="Type to filter projects..." />
-            <p class="muted">Example: web, therapy, wordpress</p>
-
-            <div class="filter-actions">
-                <strong>Filter by type</strong>
-                <div class="filter-buttons">
-                    <button type="button" class="filter-btn active-filter" data-filter="all">All</button>
-                    <button type="button" class="filter-btn" data-filter="web">Web</button>
-                    <button type="button" class="filter-btn" data-filter="business">Business</button>
-                    <button type="button" class="filter-btn" data-filter="healthcare">Healthcare</button>
+                <div class="hero-portrait">
+                    <div class="portrait-frame">
+                        <img src="assets/images/Pixel Art of me.jpg" alt="Pixel portrait of Omar Alshehri">
+                    </div>
                 </div>
             </div>
+        </header>
 
-            <div class="sort-box">
-                <label for="projectSort"><strong>Sort Projects</strong></label>
-                <select id="projectSort">
-                    <option value="default">Default Order</option>
-                    <option value="az">Title (A-Z)</option>
-                    <option value="za">Title (Z-A)</option>
-                </select>
-            </div>
-        </div>
+        <main>
+            <section class="section-block" id="projects">
+                <div class="section-title">
+                    <h2>Projects</h2>
+                </div>
 
-        <p id="projectsEmptyState" class="muted hidden">No projects found.</p>
+                <div class="quest-tabs" role="tablist" aria-label="Project categories">
+                    <button class="tab-btn active" type="button" data-target="websites" aria-pressed="true">Websites</button>
+                    <button class="tab-btn" type="button" data-target="games" aria-pressed="false">Games</button>
+                    <button class="tab-btn" type="button" data-target="systems" aria-pressed="false">Systems</button>
+                </div>
 
-        <div class="projects-container" id="projectsContainer">
-            <div
-                class="project-card fade-in"
-                data-title="Velonweb Web Design Development Wordpress Startup Business"
-                data-category="web business"
-            >
-                <img src="assets/images/velonweb-logo.png" alt="Velonweb logo" class="project-logo">
+                <div class="tab-panel active" id="websites">
+                    <article class="panel featured-project">
+                        <div class="featured-copy">
+                            <p class="tag">Personal Project</p>
+                            <h3>VelonWeb</h3>
+                            <p>
+                                Founded in 2024, VelonWeb is my own creative web project where I design and
+                                develop responsive websites with a clean visual identity. It represents how I
+                                approach real-world web work: thoughtful layout, strong presentation, and a
+                                focus on making each site feel professional and easy to use.
+                            </p>
+                            <a class="pixel-btn" href="https://velonweb.com/en/home/" target="_blank" rel="noopener noreferrer">
+                                Visit Website
+                            </a>
+                        </div>
+                        <div class="featured-media">
+                            <img src="assets/images/Velonweb homepage.png" alt="VelonWeb homepage screenshot">
+                        </div>
+                    </article>
 
-                <h3>Velonweb – Web Design & Development</h3>
-                <p>
-                    Personal web design and development project focused on building clean, responsive WordPress websites
-                    for startups and small businesses.
-                </p>
-                <a href="https://velonweb.com/en/" target="_blank" rel="noopener noreferrer">
-                    <button type="button">Visit Website</button>
-                </a>
-            </div>
+                    <div class="project-grid">
+                        <article class="project-card panel">
+                            <img src="assets/images/Shumos homepage.png" alt="Shumos Care Physiotherapy homepage screenshot">
+                            <div class="project-body">
+                                <h3>Shumos Care Physiotherapy</h3>
+                                <a class="pixel-btn" href="https://shumca.com/en/" target="_blank" rel="noopener noreferrer">Visit Website</a>
+                            </div>
+                        </article>
 
-            <div
-                class="project-card fade-in"
-                data-title="Shumos Care Physical Therapy Center Taif Website Responsive Design"
-                data-category="web healthcare"
-                >
+                        <article class="project-card panel">
+                            <img src="assets/images/Ornava homepage.png" alt="Ornava Logistics homepage screenshot">
+                            <div class="project-body">
+                                <h3>Ornava Logistics</h3>
+                                <a class="pixel-btn" href="https://ornavalogistics.com/" target="_blank" rel="noopener noreferrer">Visit Website</a>
+                            </div>
+                        </article>
 
-                <img src="assets/images/cropped-cropped-new.png" alt="Velonweb logo" class="project-logo">
-            
-                <h3>Shumos Care Physical Therapy Center</h3>
-                <p>
-                    Designed and developed the official website for a physical therapy center in Taif,
-                    focused on clear service presentation, user-friendly structure, and responsive design.
-                </p>
-                <a href="https://shumca.com/en/" target="_blank" rel="noopener noreferrer">
-                    <button type="button">Visit Website</button>
-                </a>
-            </div>
-        </div>
-    </section>
+                        <article class="project-card panel">
+                            <img src="assets/images/Ruba homepage.png" alt="Ruba Law and Legal Consulting homepage screenshot">
+                            <div class="project-body">
+                                <h3>Ruba Law &amp; Legal Consulting</h3>
+                                <a class="pixel-btn" href="https://ruba-law.com/" target="_blank" rel="noopener noreferrer">Visit Website</a>
+                            </div>
+                        </article>
 
-    <!-- skills -->
-    <section id="skills">
-        <h1>Skills</h1>
-        <div class="info-box">
-            <p>
-                This section highlights some of the tools and skills I use in my web design and front-end work.
-            </p>
-        </div>
+                        <article class="project-card panel">
+                            <img src="assets/images/Rowad Al-Najah Law homepage.png" alt="Rowad Al-Najah Law homepage screenshot">
+                            <div class="project-body">
+                                <h3>Rowad Al-Najah Law</h3>
+                                <a class="pixel-btn" href="https://rowadlaw.sa/" target="_blank" rel="noopener noreferrer">Visit Website</a>
+                            </div>
+                        </article>
 
-        <div class="skills-slider">
-            <div class="skills-track">
-                <span class="skill-pill">Front-End Development</span>
-                <span class="skill-pill">Web Design</span>
-                <span class="skill-pill">WordPress</span>
-                <span class="skill-pill">HTML</span>
-                <span class="skill-pill">Cascading Style Sheets (CSS)</span>
-                <span class="skill-pill">Search Engine Optimization (SEO)</span>
-                <span class="skill-pill">JavaScript</span>
-                <span class="skill-pill">React.js</span>
+                        <article class="project-card panel">
+                            <img src="assets/images/Pioneers law and healthcare homepage.png" alt="Pioneers Law and Healthcare homepage screenshot">
+                            <div class="project-body">
+                                <h3>Pioneers Law and Healthcare</h3>
+                                <a class="pixel-btn" href="https://pionexs.com/" target="_blank" rel="noopener noreferrer">Visit Website</a>
+                            </div>
+                        </article>
 
-                <span class="skill-pill">Front-End Development</span>
-                <span class="skill-pill">Web Design</span>
-                <span class="skill-pill">WordPress</span>
-                <span class="skill-pill">HTML</span>
-                <span class="skill-pill">Cascading Style Sheets (CSS)</span>
-                <span class="skill-pill">Search Engine Optimization (SEO)</span>
-                <span class="skill-pill">JavaScript</span>
-                <span class="skill-pill">React.js</span>
-            </div>
-        </div>
-    </section>
-    
+                        <article class="project-card panel">
+                            <img src="assets/images/MARSSA homepage.png" alt="MARSSA POTTERY homepage screenshot">
+                            <div class="project-body">
+                                <h3>MARSSA POTTERY</h3>
+                                <a class="pixel-btn" href="https://marsaaladl.com/" target="_blank" rel="noopener noreferrer">Visit Website</a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
 
-    <!-- API section -->
-    <section id="inspiration">
-        <h1>Design Inspiration</h1>
+                <div class="tab-panel" id="games" hidden>
+                    <article class="panel construction-panel">
+                        <p class="tag warning-tag">Under Construction</p>
+                        <h3>Games Portfolio</h3>
+                        <p>
+                            This area is reserved for future game projects and interactive experiments. New quests
+                            will appear here once development milestones are complete.
+                        </p>
+                        <div class="construction-lights" aria-hidden="true">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </article>
+                </div>
 
-        <div class="info-box">
-            <h3>Explore Modern Design Inspiration</h3>
-            <p>
-Discover high-quality web design inspiration powered by a live external API. Click the button to load fresh and creative design ideas.
-</p>
-            <button id="inspirationBtn" type="button">Load Inspiration</button>
-            <p id="inspirationLoading" class="muted hidden">Loading design inspiration...</p>
-            <p id="inspirationError" class="error hidden"></p>
-        </div>
+                <div class="tab-panel" id="systems" hidden>
+                    <article class="panel construction-panel">
+                        <p class="tag warning-tag">Coming Soon</p>
+                        <h3>Systems Portfolio</h3>
+                        <p>
+                            System-based projects will be added here in a future update, including more technical
+                            work focused on architecture, workflows, and scalable problem solving.
+                        </p>
+                        <div class="construction-lights" aria-hidden="true">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </article>
+                </div>
+            </section>
 
-        <p id="inspirationEmpty" class="muted hidden">No inspiration images found.</p>
+            <section class="section-block" id="github-projects">
+                <div class="section-title">
+                    <h2>My GitHub Projects</h2>
+                </div>
 
-        <div id="inspirationGrid" class="inspiration-grid"></div>
-    </section>
+                <div class="panel github-panel">
+                    <p id="githubLoading" class="github-status">Loading GitHub projects...</p>
+                    <p id="githubError" class="github-status hidden" role="alert"></p>
+                    <p id="githubEmpty" class="github-status hidden">No repositories found.</p>
+                    <div id="githubProjectsGrid" class="github-grid"></div>
+                </div>
+            </section>
 
-    <!-- contact -->
-    <section id="contact">
-        <h1>Contact Me</h1>
+            <section class="section-block" id="contact">
+                <div class="section-title">
+                    <h2>Contact</h2>
+                </div>
 
-        <form id="contactForm" novalidate>
-            <label for="nameInput">Name</label>
-            <input id="nameInput" type="text" placeholder="Your Name" required>
-            <p id="nameError" class="error hidden"></p>
+                <div class="contact-form-wrap">
+                    <form id="contactForm" class="panel contact-form" novalidate>
+                        <label for="nameInput">Name <span>*</span></label>
+                        <input id="nameInput" name="name" type="text" placeholder="Name" required>
+                        <p id="nameError" class="field-error hidden"></p>
 
-            <label for="emailInput">Email</label>
-            <input id="emailInput" type="email" placeholder="Your Email" required>
-            <p id="emailError" class="error hidden"></p>
+                        <label for="phoneInput">Phone Number <span>*</span></label>
+                        <input id="phoneInput" name="phone" type="tel" placeholder="+966..." inputmode="tel" required>
+                        <p id="phoneError" class="field-error hidden"></p>
 
-            <label for="messageInput">Message</label>
-            <textarea id="messageInput" placeholder="Your Message" required></textarea>
-            <p id="messageError" class="error hidden"></p>
+                        <label for="emailInput">Email <span>*</span></label>
+                        <input id="emailInput" name="email" type="email" placeholder="your@email.com" required>
+                        <p id="emailError" class="field-error hidden"></p>
 
-            <button type="submit">Send</button>
-            <p id="formSuccess" class="success hidden">Message sent successfully.</p>
-        </form>
-    </section>
+                        <label for="messageInput">Message <span>*</span></label>
+                        <textarea id="messageInput" name="message" rows="5" placeholder="Write your message here" required></textarea>
+                        <p id="messageError" class="field-error hidden"></p>
+
+                        <button class="pixel-btn" type="submit">Send</button>
+                        <p id="formSuccess" class="form-success hidden" role="status"></p>
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <p>&copy; Omar Alshehri</p>
+        </footer>
+    </div>
+
+    <button id="backToTopBtn" class="back-to-top hidden" type="button" aria-label="Back to top">
+        ↑
+    </button>
 
     <script src="js/script.js"></script>
 </body>
